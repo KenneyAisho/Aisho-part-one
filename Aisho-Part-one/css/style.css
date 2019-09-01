@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 18px;
+	background: #efebed;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+	padding-top: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+#content {
+	padding: 15px 15px;
+	background: url(../images/bulldog.jpg);
+}
+
+.medium {
+	color: #000000;
+	font-weight: 400;
+}
+
+.bold {
+	color: #000000;
+	font-weight: 600;
+}
+
+.emphasis {
+	color: #FF4850
+}
+
+.grey {
+	color: #88898B;
+	font-size: 15px;
+}
+
+.logo {
+	font-size: 23px;
+	height: 50px;
+	display: inline-block;
+}
+
+li a {
+	color: #88898B
+}
+
+li a:hover {
+	color: #FF4850;
+}
+
+.active,
+button {
+	display: inline-block;
+	line-height: 50px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #FF4850;
+	border-radius: 15px;
+	margin: 15px 0;
+	border: 0;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.active:hover,
+button:hover {
+	background: #CCC;
+	color:#FFF
+}
+
+@media screen and (min-width: 730px) {
+	h1 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+	section {
+		padding-top: 30px;
+		width: 50vw;
+	}
+	#content {
+		width: calc(100vw - 30px);
+		height: calc(100vh - 30px);
+		background-size: cover;
+	}
+	.topbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	li,
+	.topbar-nav {
+		display: inline-flex;
+	}
+	li a {
+		margin: 0 15px;
+	}
+	.logo {
+		line-height: 42px;
+	}
+	.active {
+		padding: 0 15px;
+	}
+	button {
+		display: block;
+		max-width: 220px;
+	}
+	.grey {
+		display: inline-block;
+		font-size: 20px;
+		margin: 15px 0;
+	}
+}
